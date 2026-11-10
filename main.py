@@ -2,8 +2,8 @@ import webview
 
 
 class Api:
-    def hello(self):
-        return "Hello from the local POS!"
+    def hello(self, data):
+        print(data)
 
 
 window = webview.create_window(
