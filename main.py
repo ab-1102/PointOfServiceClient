@@ -11,7 +11,9 @@ class Api:
         print(data, flush=True)
         return "received"
 
-    def print_bill(self, items):
+    def print_bill(self, items, customer_name, customer_phone):
+        printer.customer_name = customer_name
+        printer.customer_phone = customer_phone
         for item in items:
             printer.items.append(item)
 
