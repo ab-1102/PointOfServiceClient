@@ -8,14 +8,18 @@ print("__-___-__--_-_")
 
 class Api:
     def hello(self, data):
+        print("Hello World")
         print(data, flush=True)
         return "received"
 
-    def print_bill(self, items, customer_name, customer_phone):
-        printer.customer_name = customer_name
-        printer.customer_phone = customer_phone
-        for item in items:
-            printer.items.append(item)
+    def print_bill(self, items):
+        print("Bill Received")
+        print(items, flush=True)
+        #printer.customer_name = customer_name
+        #printer.customer_phone = customer_phone
+        #for item in items:
+            #pass
+            #printer.items.append(item)
 
         #printer.print()
 
